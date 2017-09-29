@@ -7,6 +7,8 @@ function draw() {
   noStroke();
   fill(255, 192);
   for (var i = 0; i < touches.length; i++) {
+    var c = color(255, 204, 0);
+    fill(c);
     ellipse(touches[i].x, touches[i].y,
       100+sin(i+frameCount*0.1)*50,
       100+sin(i+frameCount*0.1)*50);
